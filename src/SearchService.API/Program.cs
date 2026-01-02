@@ -1,10 +1,11 @@
 using Nest;
-using SearchService.Application.EventHandlers;
+using MassTransit;
 using SearchService.Application.Search;
 using SearchService.Application.Security;
 using SearchService.Core.Interfaces;
 using SearchService.Infrastructure.Elasticsearch;
 using SearchService.Infrastructure.Messaging;
+using SearchService.Infrastructure.Messaging.Consumers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,14 +26,44 @@ builder.Services.AddScoped<IIndexManager, IndexManager>();
 builder.Services.AddScoped<IDocumentMapper, DocumentMapper>();
 builder.Services.AddScoped<IElasticsearchService, ElasticsearchService>();
 
-// RabbitMQ Consumer
-builder.Services.AddScoped<IEventProcessor, EventProcessor>();
-builder.Services.AddHostedService<RabbitMQConsumer>();
+// Sync Record Processor
+builder.Services.AddScoped<ISyncRecordProcessor, SyncRecordProcessor>();
 
-// Event Handlers
-builder.Services.AddScoped<IEventHandler, OfferEventHandler>();
-builder.Services.AddScoped<IEventHandler, PurchaseEventHandler>();
-builder.Services.AddScoped<IEventHandler, TransportEventHandler>();
+// MassTransit Configuration
+builder.Services.AddMassTransit(x =>
+{
+    // Add consumer for SyncRecordInElasticSearch command
+    x.AddConsumer<SyncRecordInElasticSearchConsumer>();
+
+    // Configure RabbitMQ
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        var configuration = context.GetRequiredService<IConfiguration>();
+        var hostName = configuration["RabbitMQ:HostName"] ?? "localhost";
+        var port = ushort.Parse(configuration["RabbitMQ:Port"] ?? "5672");
+        var userName = configuration["RabbitMQ:UserName"] ?? "guest";
+        var password = configuration["RabbitMQ:Password"] ?? "guest";
+
+        cfg.Host(hostName, port, "/", h =>
+        {
+            h.Username(userName);
+            h.Password(password);
+        });
+
+        // Configure endpoint for SyncRecordInElasticSearch command
+        cfg.ReceiveEndpoint("search.sync-record-queue", e =>
+        {
+            e.ConfigureConsumer<SyncRecordInElasticSearchConsumer>(context);
+            e.PrefetchCount = 10;
+        });
+
+        // Configure retry policy
+        cfg.UseMessageRetry(r => r.Interval(3, TimeSpan.FromSeconds(5)));
+        
+        // Configure error handling
+        cfg.UseInMemoryOutbox();
+    });
+});
 
 // Application Services
 builder.Services.AddScoped<ISearchService, SearchService>();
