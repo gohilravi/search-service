@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SearchService</name>
+    </assembly>
+    <members>
+        <member name="T:SearchService.Interfaces.IEntityDataService">
+            <summary>
+            Interface for fetching related entity data from external services or databases
+            </summary>
+        </member>
+        <member name="T:SearchService.Models.ElasticSearchOfferDocument">
+            <summary>
+            Master Elasticsearch document that represents the unified index
+            Contains offer information with nested purchases and transports
+            </summary>
+        </member>
+        <member name="T:SearchService.Services.EntityDataService">
+            <summary>
+            Service for fetching entity data from external sources
+            This implementation uses HTTP clients to call external services
+            In production, you might want to use database repositories or other data sources
+            </summary>
+        </member>
+    </members>
+</doc>

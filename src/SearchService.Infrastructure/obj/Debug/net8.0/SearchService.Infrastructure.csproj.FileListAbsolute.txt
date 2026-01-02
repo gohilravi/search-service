@@ -1,6 +1,0 @@
-D:\Competition 2025\search-service\src\SearchService.Infrastructure\obj\Debug\net8.0\SearchService.Infrastructure.csproj.AssemblyReference.cache
-D:\Competition 2025\search-service\src\SearchService.Infrastructure\obj\Debug\net8.0\SearchService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-D:\Competition 2025\search-service\src\SearchService.Infrastructure\obj\Debug\net8.0\SearchService.Infrastructure.AssemblyInfoInputs.cache
-D:\Competition 2025\search-service\src\SearchService.Infrastructure\obj\Debug\net8.0\SearchService.Infrastructure.AssemblyInfo.cs
-D:\Competition 2025\search-service\src\SearchService.Infrastructure\obj\Debug\net8.0\SearchService.Infrastructure.csproj.CoreCompileInputs.cache
-D:\Competition 2025\search-service\src\SearchService.Infrastructure\obj\Debug\net8.0\SearchService.Infrastructure.sourcelink.json

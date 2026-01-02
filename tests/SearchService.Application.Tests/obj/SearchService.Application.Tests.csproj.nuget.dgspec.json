@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Competition 2025\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj": {}
+    "D:\\Git\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Competition 2025\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj": {
+    "D:\\Git\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Competition 2025\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj",
+        "projectUniqueName": "D:\\Git\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj",
         "projectName": "SearchService.Application",
-        "projectPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj",
-        "packagesPath": "C:\\Users\\Purvish Chandarana\\.nuget\\packages\\",
-        "outputPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Application\\obj\\",
+        "projectPath": "D:\\Git\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj",
+        "packagesPath": "C:\\Users\\Yash Bhanderi\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\search-service\\src\\SearchService.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Purvish Chandarana\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yash Bhanderi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/peddleon/index.json": {}
         },
@@ -27,11 +30,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj": {
-                "projectPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj"
+              "D:\\Git\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj": {
+                "projectPath": "D:\\Git\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj"
               },
-              "D:\\Competition 2025\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj": {
-                "projectPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj"
+              "D:\\Git\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj": {
+                "projectPath": "D:\\Git\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj"
               }
             }
           }
@@ -66,26 +69,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj": {
+    "D:\\Git\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj",
+        "projectUniqueName": "D:\\Git\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj",
         "projectName": "SearchService.Core",
-        "projectPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj",
-        "packagesPath": "C:\\Users\\Purvish Chandarana\\.nuget\\packages\\",
-        "outputPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\obj\\",
+        "projectPath": "D:\\Git\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj",
+        "packagesPath": "C:\\Users\\Yash Bhanderi\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\search-service\\src\\SearchService.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Purvish Chandarana\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yash Bhanderi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/peddleon/index.json": {}
         },
@@ -125,26 +131,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Competition 2025\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj": {
+    "D:\\Git\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Competition 2025\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Git\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj",
         "projectName": "SearchService.Infrastructure",
-        "projectPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Purvish Chandarana\\.nuget\\packages\\",
-        "outputPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Infrastructure\\obj\\",
+        "projectPath": "D:\\Git\\search-service\\src\\SearchService.Infrastructure\\SearchService.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Yash Bhanderi\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\search-service\\src\\SearchService.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Purvish Chandarana\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yash Bhanderi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/peddleon/index.json": {}
         },
@@ -152,8 +161,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj": {
-                "projectPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj"
+              "D:\\Git\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj": {
+                "projectPath": "D:\\Git\\search-service\\src\\SearchService.Core\\SearchService.Core.csproj"
               }
             }
           }
@@ -173,6 +182,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
               "version": "[10.0.1, )"
@@ -206,26 +223,29 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Competition 2025\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj": {
+    "D:\\Git\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Competition 2025\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj",
+        "projectUniqueName": "D:\\Git\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj",
         "projectName": "SearchService.Application.Tests",
-        "projectPath": "D:\\Competition 2025\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj",
-        "packagesPath": "C:\\Users\\Purvish Chandarana\\.nuget\\packages\\",
-        "outputPath": "D:\\Competition 2025\\search-service\\tests\\SearchService.Application.Tests\\obj\\",
+        "projectPath": "D:\\Git\\search-service\\tests\\SearchService.Application.Tests\\SearchService.Application.Tests.csproj",
+        "packagesPath": "C:\\Users\\Yash Bhanderi\\.nuget\\packages\\",
+        "outputPath": "D:\\Git\\search-service\\tests\\SearchService.Application.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Purvish Chandarana\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yash Bhanderi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.pkg.github.com/peddleon/index.json": {}
         },
@@ -233,8 +253,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Competition 2025\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj": {
-                "projectPath": "D:\\Competition 2025\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj"
+              "D:\\Git\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj": {
+                "projectPath": "D:\\Git\\search-service\\src\\SearchService.Application\\SearchService.Application.csproj"
               }
             }
           }
@@ -287,7 +307,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

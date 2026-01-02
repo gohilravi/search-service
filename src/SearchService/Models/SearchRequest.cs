@@ -1,0 +1,19 @@
+namespace SearchService.Models;
+
+public class SearchRequest
+{
+    public string Query { get; set; } = string.Empty;
+    public string UserType { get; set; } = string.Empty; // Seller, Buyer, Carrier, Agent
+    public string AccountId { get; set; } = string.Empty;
+    public string UserId { get; set; } = string.Empty;
+    public List<string>? EntityTypes { get; set; } // Optional filter: Offer, Purchase, Transport
+    public int Page { get; set; } = 1;
+    public int PageSize { get; set; } = 20;
+    
+    // Additional properties used by ElasticsearchService
+    public int PageNumber => Page;
+    public bool IncludeAggregations { get; set; } = false;
+    public string Status { get; set; } = string.Empty;
+    public string SortField { get; set; } = string.Empty;
+    public string SortOrder { get; set; } = "desc";
+}
