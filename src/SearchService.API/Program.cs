@@ -66,7 +66,7 @@ builder.Services.AddMassTransit(x =>
 });
 
 // Application Services
-builder.Services.AddScoped<ISearchService, SearchService>();
+builder.Services.AddScoped<ISearchService, SearchService.Application.Search.SearchService>();
 builder.Services.AddScoped<IAutocompleteService, AutocompleteService>();
 builder.Services.AddScoped<IAccessControlService, AccessControlService>();
 builder.Services.AddScoped<IQueryFilterBuilder, QueryFilterBuilder>();

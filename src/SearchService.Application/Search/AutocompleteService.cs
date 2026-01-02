@@ -2,6 +2,7 @@ using Nest;
 using SearchService.Core.Interfaces;
 using SearchService.Core.Models;
 using Microsoft.Extensions.Logging;
+using SearchService.Application.Security;
 
 namespace SearchService.Application.Search;
 

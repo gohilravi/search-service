@@ -173,10 +173,10 @@ public class ElasticsearchService : IElasticsearchService
 
         return q.Bool(b => 
         {
-            b = b.Must(mustQueries);
+            b = b.Must(mustQueries.ToArray());
             if (filterQueries.Any())
             {
-                b = b.Filter(filterQueries);
+                b = b.Filter(filterQueries.ToArray());
             }
             return b;
         });
